@@ -9,7 +9,7 @@ def words(file):
     print()
     return len(words)
 
-def count_characters(book_text: str) -> dict:
+def count_characters(book_text) -> dict:
     book_text = book_text.lower()
     char_count = {}
 
@@ -23,7 +23,7 @@ def count_characters(book_text: str) -> dict:
     print()
     return char_count
 
-def generate_report(file_path: str):
+def generate_report(file_path):
     with open(file_path, 'r') as file:
         book_text = file.read()
     
